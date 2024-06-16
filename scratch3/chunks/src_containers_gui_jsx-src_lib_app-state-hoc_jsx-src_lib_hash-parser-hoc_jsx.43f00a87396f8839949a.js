@@ -6348,8 +6348,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_6__.Component {
         [(_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().clickable)]: typeof this.props.onClickLogo !== 'undefined'
       }),
       draggable: false,
-      src: this.props.logo,
-      onClick: this.props.onClickLogo
+      src: this.props.logo
     })), (this.props.canChangeTheme || this.props.canChangeLanguage) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(_settings_menu_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], {
       canChangeLanguage: this.props.canChangeLanguage,
       canChangeTheme: this.props.canChangeTheme,
@@ -6495,11 +6494,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_6__.Component {
         this.handleClickShare(waitForUpdate);
       }
       /* eslint-enable react/jsx-no-bind */
-    })) : this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(MenuBarItemTooltip, {
-      id: "share-button"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(_share_button_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      className: (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().menuBarButton)
-    })) : [], this.props.canRemix ? remixButton : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("div", {
+    })) : this.props.showComingSoon ?  true ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(react__WEBPACK_IMPORTED_MODULE_6__.Fragment, null) : /*#__PURE__*/0 : [], this.props.canRemix ? remixButton : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()((_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().menuBarItem), (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().communityButtonWrapper))
     }, this.props.enableCommunity ? (this.props.isShowingProject || this.props.isUpdating) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(_containers_project_watcher_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       onDoneUpdating: this.props.onSeeCommunity
@@ -6510,11 +6505,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_6__.Component {
         this.handleClickSeeCommunity(waitForUpdate);
       }
       /* eslint-enable react/jsx-no-bind */
-    })) : this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(MenuBarItemTooltip, {
-      id: "community-button"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(_community_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      className: (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().menuBarButton)
-    })) : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(_divider_divider_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    })) : this.props.showComingSoon ?  true ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(react__WEBPACK_IMPORTED_MODULE_6__.Fragment, null) : /*#__PURE__*/0 : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(_divider_divider_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()((_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().divider))
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("div", {
       className: (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().fileGroup)
@@ -6576,27 +6567,8 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_6__.Component {
       renderLogin: this.props.renderLogin,
       onClose: this.props.onRequestCloseLogin
     }))) :
-    /*#__PURE__*/
     // ******** no login session is available, so don't show login stuff
-    react__WEBPACK_IMPORTED_MODULE_6__.createElement(react__WEBPACK_IMPORTED_MODULE_6__.Fragment, null, this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(react__WEBPACK_IMPORTED_MODULE_6__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(MenuBarItemTooltip, {
-      id: "mystuff"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()((_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().menuBarItem), (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().hoverable), (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().mystuffButton))
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("img", {
-      className: (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().mystuffIcon),
-      src: _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_35__
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(MenuBarItemTooltip, {
-      id: "account-nav",
-      place: this.props.isRtl ? 'right' : 'left'
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()((_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().menuBarItem), (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().hoverable), (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().accountNavMenu))
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("img", {
-      className: (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().profileIcon),
-      src: _icon_profile_png__WEBPACK_IMPORTED_MODULE_36__
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("span", null, 'scratch-cat'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement("img", {
-      className: (_menu_bar_css__WEBPACK_IMPORTED_MODULE_33___default().dropdownCaretIcon),
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_38__
-    })))) : [])), aboutButton);
+     true ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6__.createElement(react__WEBPACK_IMPORTED_MODULE_6__.Fragment, null) : /*#__PURE__*/0), aboutButton);
   }
 }
 MenuBar.propTypes = {
@@ -42374,4 +42346,4 @@ module.exports = /*#__PURE__*/JSON.parse('[{"name":"Abby","tags":["people","pers
 /***/ })
 
 }]);
-//# sourceMappingURL=src_containers_gui_jsx-src_lib_app-state-hoc_jsx-src_lib_hash-parser-hoc_jsx.775fffb9f5f76e532a22.js.map
+//# sourceMappingURL=src_containers_gui_jsx-src_lib_app-state-hoc_jsx-src_lib_hash-parser-hoc_jsx.43f00a87396f8839949a.js.map
